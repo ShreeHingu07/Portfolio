@@ -3,7 +3,7 @@ import { Download, Mail, ArrowRight } from "lucide-react";
 export default function Hero() {
   const handleDownloadResume = () => {
     const link = document.createElement("a");
-    link.href = "#";
+    link.href = "/Shree_Hingu_Resume.pdf";
     link.download = "Shree_Hingu_Resume.pdf";
     link.click();
   };
