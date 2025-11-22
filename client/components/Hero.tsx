@@ -57,7 +57,7 @@ export default function Hero() {
                 Download Resume
               </button>
               <a
-                href="#contact"
+                href="mailto:yourEmail@example.com"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-primary text-primary font-semibold rounded-lg transition-all duration-300 hover:bg-primary/10 active:scale-95"
               >
                 <Mail size={20} />
