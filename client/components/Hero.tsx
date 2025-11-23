@@ -1,4 +1,5 @@
 import { Download, Mail, ArrowRight } from "lucide-react";
+import Scene3D from "./Scene3D";
 
 export default function Hero() {
   const handleDownloadResume = () => {
@@ -27,10 +28,10 @@ export default function Hero() {
             </div>
 
             <div className="animate-slide-up" style={{ animationDelay: "0.1s" }}>
-              <p className="text-2xl md:text-3xl font-semibold bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent">
+              <p className="text-2xl md:text-3xl font-semibold text-primary">
                 Full Stack Developer
               </p>
-              <p className="text-lg text-primary/90 font-medium mt-2">
+              <p className="text-lg text-foreground/70 font-medium mt-2">
                 Specializing in MERN Stack
               </p>
             </div>
@@ -92,36 +93,14 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right Column - Illustration */}
-          <div className="hidden lg:flex justify-center items-center animate-float">
-            <div className="relative w-80 h-80">
-              {/* Gradient Background Circle */}
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-full blur-3xl" />
-
-              {/* Main Circle with Code Icon */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-full border-2 border-primary/30 flex items-center justify-center backdrop-blur-sm">
-                <div className="text-center space-y-4">
-                  <div className="text-6xl">💻</div>
-                  <p className="text-2xl font-bold gradient-text">
-                    Full Stack
-                  </p>
-                  <p className="text-sm text-foreground/60">
-                    React • Node • MongoDB
-                  </p>
-                </div>
-              </div>
-
-              {/* Floating Tech Icons */}
-              <div className="absolute top-4 right-4 w-16 h-16 bg-white dark:bg-slate-800 rounded-xl shadow-lg flex items-center justify-center text-2xl animate-bounce">
-                ⚛️
-              </div>
-              <div className="absolute bottom-4 left-4 w-16 h-16 bg-white dark:bg-slate-800 rounded-xl shadow-lg flex items-center justify-center text-2xl animate-bounce">
-                🟢
-              </div>
-              <div className="absolute bottom-8 right-8 w-16 h-16 bg-white dark:bg-slate-800 rounded-xl shadow-lg flex items-center justify-center text-2xl animate-bounce">
-                🍃
-              </div>
+          {/* Right Column - 3D Scene */}
+          <div className="hidden lg:block">
+            <div className="w-full h-96 overflow-hidden">
+              <Scene3D />
             </div>
+            {/* <p className="text-center text-foreground/60 text-sm mt-4">
+              React • Node.js • MongoDB • Express
+            </p> */}
           </div>
         </div>
 
